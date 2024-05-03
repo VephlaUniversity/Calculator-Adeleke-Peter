@@ -1,0 +1,139 @@
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  user-select: none;
+  background: linear-gradient(135deg, #153677, #4e085f);
+}
+
+.container {
+  padding: 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #fff;
+}
+.container:hover {
+  border: none;
+  box-shadow: 13px 13px 20px #fff;
+  transform: scale(1.1);
+  background: #000;
+}
+
+h1{
+  color: #fff;
+  padding-bottom: 1rem;
+}
+.row button {
+  width: 60px;
+  height: 30px;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  margin: 5px;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 5px 5px 8px #00000020, -5px -5px 4px #ffff;
+}
+.row button:active {
+  transform: scale(0.9);
+  box-shadow: inset 5px 5px 8px rgba(16, 16, 16, 0.1), inset -5px -5px 8px #fff;
+}
+
+.row button:hover {
+  background: #fff;
+}
+
+.display #screen {
+  margin-bottom: 0.5rem;
+  width: auto;
+  height: 70px;
+  font-size: 2.1875rem;
+  outline: none;
+  border: none;
+  text-align: right;
+  padding-right: 0.5rem;
+  background: #9eab79;
+  border-radius: 6px;
+  box-shadow: inset 8px 8px 8px #92948b, inset -8px -8px 8px #939c7b;
+}
+
+#eval {
+  background: #575555;
+  color: #fff;
+  box-shadow: 5px 5px 8px #00000020, -5px -5px 4px #5f5e5e;
+}
+
+#eval:active {
+  transform: scale(0.9);
+  box-shadow: inset 5px 5px 8px #5f5e5e, inset -5px -5px 8px #5f5e5e;
+}
+#eval:hover {
+  background: #4e4d4d;
+}
+
+#ac {
+  background: #33cc33;
+  color: #fff;
+  box-shadow: 5px 5px 8px #00000020, -5px -5px 4px #2eb82e;
+}
+
+#ac:active {
+  transform: scale(0.9);
+  box-shadow: inset 5px 5px 8px #2eb82e, inset -5px -5px 8px #33cc33 !important;
+}
+#ac:hover {
+  background: #2eb82e;
+}
+
+#ce {
+  background: #b60606;
+  color: #fff;
+  box-shadow: 5px 5px 8px #00000020, -5px -5px 4px #d00707;
+}
+
+#ce:active {
+  transform: scale(0.9);
+  box-shadow: inset 5px 5px 8px #b00707, inset -5px -5px 8px #d20b0b !important;
+}
+
+#ce:hover {
+  background: #b00707;
+}
+
+.sci button,
+.major {
+  background: #a2bbcf;
+  box-shadow: 5px 5px 8px #00000020, -5px -5px 4px #6896bc !important;
+}
+.sci button:hover,
+.major:hover {
+  background: #6896bc !important;
+}
+.sci button:active,
+.major:active {
+  box-shadow: inset 5px 5px 8px #a2bbcf, inset -5px -5px 8px #6896bc !important;
+}
+
+@media (max-width: 800px) {
+  .btns {
+    display: grid;
+    grid-template-columns: 50%;
+  }
+  .display #screen {
+    width: 13rem;
+    font-size: 1.8rem;
+    text-align: right;
+  }
+  .container {
+    width: 14rem;
+  }
+  .row {
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    column-gap: 2.5rem;
+  }
+}
